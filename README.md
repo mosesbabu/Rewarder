@@ -59,20 +59,23 @@ We would add some more features in future as :
 * Know Bugs
 
         * Voucher may not generate perfectly as required to be fixed
-        * 
+        
         * Eligibiity by date of birth not perfectly working
-        * 
+        
 		* Voucher is notautomatically calculated
-		* 
+		
   
 
 * Setting up the Database
 
-        To be able to use the app you need toconfigure the database.
+*To be able to use the app you need toconfigure the database.
+
 * Create a mysql database with a name of your choice you can use xampp
+
 * change the configurations in your .env file
+
 * run
-        *  php artisan migrate
+        *php artisan migrate
 
          
 
