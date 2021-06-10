@@ -22,9 +22,13 @@ As a user I would like to:
 We would add some more features in future as :
 
 *Automation of voucher calculation by eligibility
+
 *Registration flow to automatically capture customer information,transactions 
+
 *improving UI aspect
+
 *Ensure voucher is generated uniquely and can be reedemed in the shopping checkout
+
 *Abiity to detect customers birthday and automatically issue voucher
 
 
@@ -54,25 +58,28 @@ We would add some more features in future as :
 
 * Know Bugs
 
-        $ Voucher may not generate perfectly as required to be fixed
-        $ Eligibiity by date of birth not perfectly working
-		$ Voucher is notautomatically calculated
+        * Voucher may not generate perfectly as required to be fixed
+        * 
+        * Eligibiity by date of birth not perfectly working
+        * 
+		* Voucher is notautomatically calculated
+		* 
   
 
 * Setting up the Database
 
         To be able to use the app you need toconfigure the database.
-
-        * Create a mysql database with a name of your choice you can use xampp
-        * change the configurations in your .env file
-        * run php artisan migrate
+* Create a mysql database with a name of your choice you can use xampp
+* change the configurations in your .env file
+* run
+        *  php artisan migrate
 
          
 
 * To run the application, in your terminal:
 
-        $ run php artisan serve
-        $ run npm run watch in another terminal
+        $  php artisan serve
+        $  npm run watch in another terminal
 
 ## Testing the Application
 * 
