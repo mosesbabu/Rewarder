@@ -14,7 +14,7 @@ class CustomerDetailsController extends Controller
      */
     public function index()
     {
-        $categories = CUstomerDetails::all(['id','title','description']);
+        $categories = CUstomerDetails::all(['id','first_name','order_value']);
         return response()->json($categories);
     }
 
@@ -36,7 +36,7 @@ class CustomerDetailsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\CUstomerDetails  $customer_details
+     * @param  \App\Models\CustomerDetails  $customer_details
      * @return \Illuminate\Http\Response
      */
     public function show(CustomerDetails $customer_details)

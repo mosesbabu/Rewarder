@@ -7,6 +7,8 @@
                     <div class="navbar-nav">
                         <router-link exact-active-class="active" to="/" class="nav-item nav-link">Home</router-link>
                         <router-link exact-active-class="active" to="/customer_details/add" class="nav-item nav-link">Customers</router-link>
+                         <router-link exact-active-class="active" to="/voucher_status" class="nav-item nav-link">voucher status</router-link>
+          
                     </div>
                 </div>
             </div>

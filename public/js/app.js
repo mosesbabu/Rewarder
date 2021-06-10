@@ -1864,6 +1864,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
 
 /***/ }),
@@ -2023,13 +2025,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 var Welcome = function Welcome() {
   return __webpack_require__.e(/*! import() | resource/js/components/welcome */ "resource/js/components/welcome").then(__webpack_require__.bind(__webpack_require__, /*! ./components/Welcome.vue */ "./resources/js/components/Welcome.vue"));
-}; //const CategoryList = () => import('./components/category/List.vue' /* webpackChunkName: "resource/js/components/category/list" */)
+};
 
+var CustomerList = function CustomerList() {
+  return __webpack_require__.e(/*! import() | resource/js/components/category/list */ "resource/js/components/category/list").then(__webpack_require__.bind(__webpack_require__, /*! ./components/CustomerDetails/List.vue */ "./resources/js/components/CustomerDetails/List.vue"));
+};
 
 var CustomerDetails = function CustomerDetails() {
   return __webpack_require__.e(/*! import() | resource/js/components/customerdetails/add */ "resource/js/components/customerdetails/add").then(__webpack_require__.bind(__webpack_require__, /*! ./components/CustomerDetails/Add.vue */ "./resources/js/components/CustomerDetails/Add.vue"));
-}; //const CategoryEdit = () => import('./components/category/Edit.vue' /* webpackChunkName: "resource/js/components/category/edit" */)
-
+};
 
 var routes = [{
   name: 'home',
@@ -2039,6 +2043,10 @@ var routes = [{
   name: 'CustomerDetails',
   path: '/customer_details/add',
   component: CustomerDetails
+}, {
+  name: 'CustomerList',
+  path: '/voucher_status',
+  component: CustomerList
 }];
 
 /***/ }),
@@ -37648,6 +37656,18 @@ var render = function() {
                     }
                   },
                   [_vm._v("Customers")]
+                ),
+                _vm._v(" "),
+                _c(
+                  "router-link",
+                  {
+                    staticClass: "nav-item nav-link",
+                    attrs: {
+                      "exact-active-class": "active",
+                      to: "/voucher_status"
+                    }
+                  },
+                  [_vm._v("voucher status")]
                 )
               ],
               1
@@ -53132,7 +53152,7 @@ Vue.compile = compileToFunctions;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resource/js/components/welcome":1,"resource/js/components/customerdetails/add":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resource/js/components/welcome":1,"resource/js/components/category/list":1,"resource/js/components/customerdetails/add":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

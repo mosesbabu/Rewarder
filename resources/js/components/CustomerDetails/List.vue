@@ -1,7 +1,7 @@
 <template>
     <div class="row">
         <div class="col-12 mb-2 text-end">
-            <router-link :to='{name:"customer_detailAdd"}' class="btn btn-primary">Add Customer</router-link>
+            <router-link :to='{name:"CustomerDetails"}' class="btn btn-primary">Add Customer</router-link>
         </div>
         <div class="col-12">
             <div class="card">
@@ -23,7 +23,7 @@
                             <tbody v-if="customer_details.length > 0">
                                 <tr v-for="(customer_detail,key) in customer_details" :key="key">
                                     <td>{{ customer_detail.id }}</td>
-                                        <td>{{ customer_detail.first_name }}</td>
+                                    <td>{{ customer_detail.first_name }}</td>
                                     <td>{{ customer_detail.order_value }}</td>
                                     <td>{{ customer_detail.voucher_value }}</td>
                                     <td>{{ customer_detail.reedemed }}</td>
@@ -46,10 +46,10 @@
 </template>
 <script>
 export default {
-    name:"status",
+    name:"customer_details",
     data(){
         return {
-           cusromer_details:[]
+           customer_details:[]
         }
     },
     mounted(){
@@ -61,7 +61,7 @@ export default {
                 this.customer_details = response.data
             }).catch(error=>{
                 console.log(error)
-                this.categories = []
+                this.customer_details = []
             })
         },
       

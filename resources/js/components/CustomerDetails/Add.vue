@@ -22,10 +22,10 @@
                             </div>
                              <div class="col-12 mb-2">
                                 <div class="form-group">
-                                    <label>Reedemed?</label>
-                                    <input type="text"  class="form-control" v-model="customer_details.order_value">
+                                    <label>Reedemed</label>
+                                    <input type="text"  class="form-control" v-model="customer_details.reedemed">
                                 </div>
-                                <input type="text" style="display:none" class="form-control" v-model="customer_details.voucher_amount">
+                               
                             </div>
 
                             <div class="col-12">

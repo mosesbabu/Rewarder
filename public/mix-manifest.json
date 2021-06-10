@@ -1,8 +1,7 @@
 {
     "/js/app.js": "/js/app.js",
     "/js/resource/js/components/welcome.js": "/js/resource/js/components/welcome.js",
-    "/js/resource/js/components/category/add.js": "/js/resource/js/components/category/add.js",
-    "/css/app.css": "/css/app.css",
-    "/js/resource/js/components/cus/add.js": "/js/resource/js/components/cus/add.js",
-    "/js/resource/js/components/customerdetails/add.js": "/js/resource/js/components/customerdetails/add.js"
+    "/js/resource/js/components/category/list.js": "/js/resource/js/components/category/list.js",
+    "/js/resource/js/components/customerdetails/add.js": "/js/resource/js/components/customerdetails/add.js",
+    "/css/app.css": "/css/app.css"
 }
