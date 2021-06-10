@@ -16,6 +16,8 @@ class CreateCustomerDetailsTable extends Migration
         Schema::create('customer_details', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('first_name');
+            $table->integer('order_value');
         });
     }
 
