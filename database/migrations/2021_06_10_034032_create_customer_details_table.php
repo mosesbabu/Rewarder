@@ -18,6 +18,8 @@ class CreateCustomerDetailsTable extends Migration
             $table->timestamps();
             $table->string('first_name');
             $table->integer('order_value');
+            $table->integer('voucher_value');
+            $table->integer('reedemed');
         });
     }
 

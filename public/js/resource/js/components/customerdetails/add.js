@@ -1114,7 +1114,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
-      _c("h4", [_vm._v("Add Customer Detials")])
+      _c("h4", [_vm._v("Add Customer Details")])
     ])
   },
   function() {
@@ -1125,7 +1125,7 @@ var staticRenderFns = [
       _c(
         "button",
         { staticClass: "btn btn-primary", attrs: { type: "submit" } },
-        [_vm._v("Save")]
+        [_vm._v("Submit")]
       )
     ])
   }

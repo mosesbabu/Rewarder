@@ -3,7 +3,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h4>Add Customer Detials</h4>
+                    <h4>Add Customer Details</h4>
                 </div>
                 <div class="card-body">
                     <form @submit.prevent="create">
@@ -29,7 +29,7 @@
                             </div>
 
                             <div class="col-12">
-                                <button type="submit" class="btn btn-primary">Save</button>
+                                <button type="submit" class="btn btn-primary">Submit</button>
                             </div>
                         </div>                        
                     </form>

@@ -9,5 +9,5 @@ class CustomerDetails extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['first_name','order_value'];
+    protected $fillable = ['first_name','order_value','voucher_value','redeemed'];
 }
