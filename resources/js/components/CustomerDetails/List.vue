@@ -17,7 +17,7 @@
                                     <th>Name</th>
                                     <th>Order Value</th>
                                     <th>Voucher Value</th>
-                                    <th>Reedemed</th>
+                                    <th>Redemeed</th>
                                 </tr>
                             </thead>
                             <tbody v-if="customer_details.length > 0">
@@ -26,7 +26,7 @@
                                     <td>{{ customer_detail.first_name }}</td>
                                     <td>{{ customer_detail.order_value }}</td>
                                     <td>{{ customer_detail.voucher_value }}</td>
-                                    <td>{{ customer_detail.reedemed }}</td>
+                                    <td>{{ customer_detail.redemeed }}</td>
                                     <td>
                                         
                                     </td>
@@ -55,6 +55,7 @@ export default {
     mounted(){
         this.getCustomerDetails()
     },
+    
     methods:{
         async getCustomerDetails(){
             await this.axios.get('/api/customer_details').then(response=>{

@@ -22,12 +22,18 @@
                             </div>
                              <div class="col-12 mb-2">
                                 <div class="form-group">
-                                    <label>Reedemed</label>
-                                    <input type="text"  class="form-control" v-model="customer_details.reedemed">
+                                    <label>Redemeed</label>
+                                    <input type="text"  class="form-control" v-model="customer_details.redemeed">
                                 </div>
-                               
+                              
                             </div>
-
+<div class="col-12 mb-2">
+                                <div class="form-group">
+                                    <label>Voucher Value</label>
+                                    <input type="text"  class="form-control" v-model="customer_details.voucher_value">
+                                </div>
+                              
+                            </div>
                             <div class="col-12">
                                 <button type="submit" class="btn btn-primary">Submit</button>
                             </div>
@@ -46,7 +52,11 @@ export default {
         return {
            customer_details:{
                 first_name:"",
-                order_value:""
+                order_value:"",
+                redemeed:"",
+                voucher_value:""
+               
+
             }
         }
     },

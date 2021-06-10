@@ -71,13 +71,21 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "add-details",
   data: function data() {
     return {
       customer_details: {
         first_name: "",
-        order_value: ""
+        order_value: "",
+        redemeed: "",
+        voucher_value: ""
       }
     };
   },
@@ -1042,20 +1050,20 @@ var render = function() {
                 _vm._v(" "),
                 _c("div", { staticClass: "col-12 mb-2" }, [
                   _c("div", { staticClass: "form-group" }, [
-                    _c("label", [_vm._v("Reedemed")]),
+                    _c("label", [_vm._v("Redemeed")]),
                     _vm._v(" "),
                     _c("input", {
                       directives: [
                         {
                           name: "model",
                           rawName: "v-model",
-                          value: _vm.customer_details.reedemed,
-                          expression: "customer_details.reedemed"
+                          value: _vm.customer_details.redemeed,
+                          expression: "customer_details.redemeed"
                         }
                       ],
                       staticClass: "form-control",
                       attrs: { type: "text" },
-                      domProps: { value: _vm.customer_details.reedemed },
+                      domProps: { value: _vm.customer_details.redemeed },
                       on: {
                         input: function($event) {
                           if ($event.target.composing) {
@@ -1063,7 +1071,39 @@ var render = function() {
                           }
                           _vm.$set(
                             _vm.customer_details,
-                            "reedemed",
+                            "redemeed",
+                            $event.target.value
+                          )
+                        }
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "col-12 mb-2" }, [
+                  _c("div", { staticClass: "form-group" }, [
+                    _c("label", [_vm._v("Voucher Value")]),
+                    _vm._v(" "),
+                    _c("input", {
+                      directives: [
+                        {
+                          name: "model",
+                          rawName: "v-model",
+                          value: _vm.customer_details.voucher_value,
+                          expression: "customer_details.voucher_value"
+                        }
+                      ],
+                      staticClass: "form-control",
+                      attrs: { type: "text" },
+                      domProps: { value: _vm.customer_details.voucher_value },
+                      on: {
+                        input: function($event) {
+                          if ($event.target.composing) {
+                            return
+                          }
+                          _vm.$set(
+                            _vm.customer_details,
+                            "voucher_value",
                             $event.target.value
                           )
                         }

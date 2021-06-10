@@ -1006,7 +1006,7 @@ var render = function() {
                           _vm._v(_vm._s(customer_detail.voucher_value))
                         ]),
                         _vm._v(" "),
-                        _c("td", [_vm._v(_vm._s(customer_detail.reedemed))]),
+                        _c("td", [_vm._v(_vm._s(customer_detail.redemeed))]),
                         _vm._v(" "),
                         _c("td")
                       ])
@@ -1044,7 +1044,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("th", [_vm._v("Voucher Value")]),
         _vm._v(" "),
-        _c("th", [_vm._v("Reedemed")])
+        _c("th", [_vm._v("Redemeed")])
       ])
     ])
   },

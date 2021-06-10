@@ -14,7 +14,7 @@ class CustomerDetailsController extends Controller
      */
     public function index()
     {
-        $categories = CUstomerDetails::all(['id','first_name','order_value']);
+        $categories = CUstomerDetails::all(['id','first_name','order_value','voucher_value',"redemeed"]);
         return response()->json($categories);
     }
 
