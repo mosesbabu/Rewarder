@@ -37655,7 +37655,7 @@ var render = function() {
                       to: "/customer_details/add"
                     }
                   },
-                  [_vm._v("Customers")]
+                  [_vm._v("Add Customer")]
                 ),
                 _vm._v(" "),
                 _c(
